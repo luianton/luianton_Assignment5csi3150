@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #ff0000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+header p {
+  margin: 10px 0 0;
+}
+
+/* Filter Section */
+.filters {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.filter-group {
+  margin-bottom: 15px;
+}
+
+.filter-group label {
+  margin-right: 10px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+select option[value=""] {
+  font-style: italic;
+  color: gray;
+}
+
+/* Car Listings */
+.car-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.car-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 15px;
+  text-align: center;
+}
+
+.car-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.car-card h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.car-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 1.2em;
+  color: #999;
+}
+
+select option[value=""] {
+  font-style: italic;
+  color: gray;
+}

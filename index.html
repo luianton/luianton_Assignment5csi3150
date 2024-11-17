@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Used Car Dealership</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Used Car Dealership</h1>
+      <p>Find your perfect car from our wide selection!</p>
+    </header>
+    <main>
+      <section class="filters">
+        <h2>Filter Options</h2>
+        <div class="filter-group">
+          <label for="minYear">Min Year:</label>
+          <input type="number" id="minYear" placeholder="e.g., 2005" />
+          <label for="maxYear">Max Year:</label>
+          <input type="number" id="maxYear" placeholder="e.g., 2020" />
+        </div>
+        <div class="filter-group">
+          <label for="make">Make:</label>
+          <select id="make" multiple>
+            <option value="" selected>-- Select Make --</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Honda">Honda</option>
+            <option value="Ford">Ford</option>
+            <option value="Lexus">Lexus</option>
+            <option value="Ferrari">Ferrari</option>
+            <option value="BMW">BMW</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="maxMileage">Max Mileage:</label>
+          <input type="number" id="maxMileage" placeholder="e.g., 30000" />
+        </div>
+        <div class="filter-group">
+          <label for="minPrice">Min Price:</label>
+          <input type="number" id="minPrice" placeholder="e.g., 5000" />
+          <label for="maxPrice">Max Price:</label>
+          <input type="number" id="maxPrice" placeholder="e.g., 25000" />
+        </div>
+        <div class="filter-group">
+          <label for="color">Color:</label>
+          <select id="color" multiple>
+            <option value="" selected>-- Select Color --</option>
+            <option value="Silver">Silver</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Blue">Blue</option>
+            <option value="Red">Red</option>
+          </select>
+        </div>
+        <button id="applyFilters">Apply Filters</button>
+      </section>
+
+      <section class="car-list">
+        <h2>Available Cars</h2>
+        <div id="carCards" class="car-cards"></div>
+      </section>
+    </main>
+    <script src="js/usedCars.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
